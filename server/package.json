@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "module": "ES6",
+  "version": "1.0.0",
+  "main": "www.mjs",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
