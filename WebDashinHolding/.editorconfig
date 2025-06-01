@@ -1,0 +1,4 @@
+[*.{js,ts,vue}]
+end_of_line = lf      # 指定换行符为 LF
+insert_final_newline = false  # 关闭文件末尾自动添加换行
+trim_trailing_whitespace = true

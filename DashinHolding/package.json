@@ -1,0 +1,20 @@
+{
+  "name": "dashinholding",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dev:mp-weixin": "uni build -p mp-weixin --watch",
+    "build:mp-weixin": "uni build -p mp-weixin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.2-4060420250429001"
+  },
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.5.7",
+    "axios": "^1.9.0"
+  }
+}

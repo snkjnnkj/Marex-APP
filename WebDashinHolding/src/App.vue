@@ -1,85 +1,64 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <div class="inline-block">
+    <ModulNav></ModulNav>
+    <Navigation></Navigation>
+    <MainPage></MainPage>
+    <FoolPage></FoolPage>
+    <Teleport to="body">
+      <Login v-if="isLogin"></Login>
+    </Teleport>
+  </div>
 </template>
+<script setup>
+import {onMounted, ref} from 'vue'
+/*移动端的导航栏*/
+import ModulNav from "@/components/Main/modulNav/modulNav.vue";
+/*导航栏*/
+import Navigation from '@/components/Main/nav/Navigation.vue'
+/*路由组件*/
+import MainPage from "@/components/Main/MainPage.vue";
+/*页脚*/
+import FoolPage from "@/components/Main/FoolPage/FoolPage.vue";
+/*导入登录框*/
+import Login from '@/components/PublicUi/LogIn/Login.vue';
+/*导入登录框*/
+import {useLogin} from "@/stores/useLogin.js";
+/*导入消息提示框*/
+import {ball} from "@/utils/showMessAge.js";
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+const {open4} = ball()
+const {isLogin, userCookes, out} = useLogin()
+import {IpSite} from '@/stores/IpSite.js'
+import axios from "axios";
+// 查询账号状态（比如1天查一次或者半天查询一次）
+const getUserStatus = async () => {
+  if (userCookes.value) {
+    try {
+      const res = await axios.get(`${IpSite}/api/getUserByIdStatus/${userCookes.value.id}`)
+      if (res.data.status === 0) {
+        console.log(res.data.status)
+        open4('账号已被封禁,请联系管理员', 5000)
+        out()
+      }
+      // if (res.data.user_role !== 1) {
+      //   open4('权限已变更，请重新登录', 5000)
+      // }
+    } catch (err) {
+      console.log('请求失败')
+    }
+  }
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
+onMounted(() => {
+  getUserStatus()
+  /*定时轮询状态*/
+  setInterval(() => {
+    getUserStatus()
+  }, 5000)
+})
+</script>
+<style scoped lang="scss">
+.inline-block {
   width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+  height: 100vh;
 }
 </style>

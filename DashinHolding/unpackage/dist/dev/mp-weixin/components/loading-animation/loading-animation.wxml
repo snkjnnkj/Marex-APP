@@ -1,0 +1,1 @@
+<view wx:if="{{a}}" class="loading-container data-v-fbbdae64"><view class="loading-spinner data-v-fbbdae64"></view><text class="loading-text data-v-fbbdae64">数据加载中...</text></view>

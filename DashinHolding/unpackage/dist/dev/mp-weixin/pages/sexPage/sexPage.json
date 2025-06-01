@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "性别",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "navbar": "../../components/navbar/navbar",
+    "placeholder": "../../components/placeholder/placeholder"
+  }
+}

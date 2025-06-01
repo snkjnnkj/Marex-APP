@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "start:php": "php -S localhost:3000",
+    "start:node": "node www.mjs",
+    "start": "concurrently \"npm run start:php\" \"npm run start:node\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "body-parser": "^2.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.0",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.14.1",
+    "nodemailer": "^6.10.1",
+    "nodemon": "^3.1.9",
+    "qs": "^6.14.0",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  }
+}

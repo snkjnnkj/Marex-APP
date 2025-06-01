@@ -1,0 +1,33 @@
+{
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/MyData/MyData",
+          "pathName": "pages/MyData/MyData",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        },
+        {
+          "name": "pages/sexPage/sexPage",
+          "pathName": "pages/sexPage/sexPage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/name/name",
+          "pathName": "pages/name/name",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "setting": {
+    "compileHotReLoad": false
+  },
+  "libVersion": "3.8.3"
+}

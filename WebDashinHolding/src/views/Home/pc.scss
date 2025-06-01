@@ -1,0 +1,241 @@
+.TY-Home {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.block {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  overflow: hidden;
+
+  .h-\[60vh\] {
+    height: 94vh;
+  }
+
+  .min-h-\[400px\] {
+    min-height: 100%;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
+
+.relative {
+  position: relative;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
+
+.banner {
+  padding: 0 136px 136px;
+  height: 100%;
+
+  .web-link {
+    position: absolute;
+    right: 133px;
+    bottom: 10%;
+
+    .web-link-num {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ffffff7a;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 24px;
+      height: 108px;
+      width: 108px;
+      padding: 16px 0;
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      cursor: pointer;
+      justify-content: space-between;
+
+      .images {
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+          width: 48px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.duration-300 {
+  transition-duration: .3s;
+}
+
+.banner-left {
+  padding-top: 180px;
+  position: absolute;
+
+  .yk-space.align-center {
+    align-items: center;
+  }
+
+  .yk-space.justify-start {
+    justify-content: flex-start;
+  }
+
+  .yk-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    color: inherit;
+    font-style: normal;
+    vertical-align: -2px;
+    outline: none;
+    fill: var(--gray);
+  }
+
+  .yike {
+    height: 140px;
+    width: 395px;
+  }
+
+  .time {
+    height: 133px;
+    width: 289px;
+  }
+
+  .slogan {
+    padding-top: 48px;
+    padding-bottom: 64px;
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--bgColor2);
+  }
+
+  .down {
+    height: 120px;
+    width: 64px;
+    border-radius: 34px;
+    background-image: linear-gradient(180deg, var(--pcolor6) 0%, var(--pcolor8) 100%);
+    text-align: center;
+    padding-top: 52px;
+    cursor: pointer;
+
+    .yk-icon {
+      width: 32px;
+      height: 32px;
+      color: var(--bgColor1);
+    }
+
+    @keyframes example {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(16px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .moves {
+      position: relative;
+      animation: example 3s infinite ease;
+    }
+  }
+
+  .yk-space.size-s {
+    gap: 16px;
+  }
+
+  .links {
+    margin: 64px 0 24px;
+  }
+}

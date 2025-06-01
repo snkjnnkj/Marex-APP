@@ -1,0 +1,25 @@
+
+	/* 导航栏容器 */
+.custom-navbar.data-v-eaf4c2e5 {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		background: rgba(61, 199, 153, 0.32);
+		/* box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.06); */
+}
+
+	/* 导航内容区域 */
+.nav-content.data-v-eaf4c2e5 {
+		flex: 1;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 20rpx;
+}
+
+	/* 右侧占位 */
+.right-placeholder.data-v-eaf4c2e5 {
+		visibility: hidden;
+}

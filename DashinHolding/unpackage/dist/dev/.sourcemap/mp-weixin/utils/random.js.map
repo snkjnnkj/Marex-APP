@@ -1,0 +1,1 @@
+{"version":3,"file":"random.js","sources":["utils/random.js"],"sourcesContent":["export function getMathRandom() {\r\n    let result = parseInt(Math.random() * 1000000) + 1000000\r\n    return result.toString().slice(0, 6)\r\n}"],"names":[],"mappings":";AAAO,SAAS,gBAAgB;AAC5B,MAAI,SAAS,SAAS,KAAK,OAAQ,IAAG,GAAO,IAAI;AACjD,SAAO,OAAO,SAAQ,EAAG,MAAM,GAAG,CAAC;AACvC;;"}

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/UploadIssue/UploadIssue",
+    "pages/RepairInquiry/RepairInquiry",
+    "pages/PersonnelInquiry/PersonnelInquiry",
+    "pages/Login/Login",
+    "pages/code/code",
+    "pages/MyData/MyData",
+    "pages/name/name",
+    "pages/sexPage/sexPage",
+    "pages/setEmailPage/setEmailPage",
+    "pages/setPhonePage/setPhonePage",
+    "pages/setTeacherPage/setTeacherPage"
+  ],
+  "tabBar": {
+    "borderStyle": "black",
+    "color": "#7A7E83",
+    "selectedColor": "#0AA9DB",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/home1.png",
+        "selectedIconPath": "static/home2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/my1.png",
+        "selectedIconPath": "static/my2.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "测试",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png"
+      }
+    ]
+  },
+  "permission": {
+    "request": {
+      "origin": "*"
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {}
+}

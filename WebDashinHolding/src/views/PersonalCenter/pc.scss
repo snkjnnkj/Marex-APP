@@ -1,0 +1,220 @@
+.phone {
+  display: none;
+}
+
+.box {
+  min-height: 700px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 70px 136px 136px;
+  margin-top: 50px;
+  z-index: 1;
+  //background: var(--bgColor1);
+
+  .my-left {
+    width: 700px;
+    height: 800px;
+    //background: var(--bgColor1);
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 16px;
+    background: var(--bgColor2);
+  }
+
+  .introduced {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(204, 198, 198);
+    color: #0b1926;
+    justify-content: space-between;
+
+    button {
+      width: 12%;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: 0.1s;
+    }
+
+    button:hover {
+      background: #eee;
+    }
+  }
+
+  .my-left .my-content {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid rgb(204, 198, 198);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .btn {
+      display: flex;
+      width: 61%;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 120px;
+
+      .Switchtheavatar {
+        width: 100%;
+        height: 38px;
+        background: #eeeeee;
+        border-radius: 4px;
+        align-items: center;
+        padding: 4px;
+        display: none;
+      }
+    }
+
+    .setAvatar {
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.2s;
+      opacity: 0;
+
+      .inp {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        z-index: 12;
+        right: 0;
+        bottom: -10px;
+        opacity: 0;
+      }
+    }
+
+    .images {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      background: rgba(61, 199, 153, 0.32);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      width: 100%;
+      border-bottom: 1px solid rgb(204, 198, 198);
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+
+      p {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+    }
+  }
+
+  .my-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .my-ubdata {
+      width: 100%;
+      height: fit-content;
+      background: var(--bgColor2);
+      border-radius: 16px;
+      position: relative;
+
+      .introduced {
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgb(204, 198, 198);
+      }
+
+      .box-1 {
+        width: fit-content;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        padding: 16px;
+
+        label {
+          margin-top: 15px;
+          width: 100%;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          justify-content: space-between;
+        }
+
+        span {
+          font-size: 16px;
+        }
+
+        input {
+          width: 500px;
+          height: 40px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          padding-left: 10px;
+        }
+
+
+      }
+    }
+  }
+
+  .log-out {
+    width: 200px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    z-index: 12;
+    background: #389BFF;
+    border-radius: 16px;
+    display: none;
+  }
+}

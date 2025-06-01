@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "登录",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "loading-animation": "../../components/loading-animation/loading-animation",
+    "navbar": "../../components/navbar/navbar",
+    "placeholder": "../../components/placeholder/placeholder"
+  }
+}

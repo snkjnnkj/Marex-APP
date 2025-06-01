@@ -1,13 +1,36 @@
 {
   "name": "server",
-  "module": "ES6",
   "version": "1.0.0",
-  "main": "www.mjs",
+  "main": "./lib/www.mjs",
+  "type": "module",
   "scripts": {
-    "test": "npm run dev"
+    "start:php": "php -S localhost:3005",
+    "start:node": "node ./lib/www.mjs",
+    "start": "concurrently \"npm run start:php\" \"npm run start:node\""
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.0",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.14.1",
+    "nodemailer": "^6.10.1",
+    "nodemon": "^3.1.9",
+    "qs": "^6.14.0",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [],
   "description": ""
 }

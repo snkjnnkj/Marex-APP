@@ -1,0 +1,151 @@
+.box {
+  display: none;
+}
+
+.phone {
+  width: 100vw;
+  height: 70%;
+  background: #eee;
+  padding-top: 55px;
+  .shows {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    //background: rgba(61, 199, 153, 0.32);
+    position: relative;
+
+    .avatar {
+      width: 100%;
+      height: 200px;
+      background: #fff;
+      border-radius: 8px;
+
+      .user {
+        width: 100%;
+        height: 50%;
+        border-bottom: 1px solid #f8f8f8;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        gap: 10px;
+        position: relative;
+
+        .images {
+          width: 60px;
+          height: 60px;
+          // border: 1px solid #000;
+          border-radius: 8px;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          background: rgba(61, 199, 153, 0.32);
+
+          image {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .account {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 10px;
+
+          span:nth-child(1) {
+            font-size: 20px;
+          }
+        }
+
+        svg {
+          position: absolute;
+          right: 16px;
+        }
+      }
+
+      .fuwy {
+        width: 100%;
+        height: 50%;
+
+        .bottom {
+          width: 100%;
+          overflow: hidden;
+
+          .item {
+            //padding: 0 16px;
+            padding-top: 6px;
+            height: 100%;
+            justify-content: space-between;
+            //background: red;
+            .item-card {
+              width: 85px;
+              height: 85%;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: center;
+
+              .card-icon {
+                width: 55px;
+                height: 55px;
+                background: #eee;
+                border-radius: 4px;
+                justify-content: center;
+                align-items: center;
+
+                image {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+
+              text {
+                color: #212121;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .item {
+      //padding: 0 16px;
+      padding-top: 6px;
+      height: fit-content;
+      margin-top: 10px;
+      justify-content: space-between;
+      background: #fff;
+      //overflow: hidden;
+
+      .item-card {
+        width: 100%;
+        height: fit-content;
+        background: #fff;
+        border-radius: 8px;
+
+        .card {
+          width: 100%;
+          height: 55px;
+          border-bottom: 1px solid #f8f8f8;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 16px;
+
+          .icon {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+      }
+    }
+
+    .out {
+      width: 100%;
+      height: 55px;
+      background: #fff;
+      border-radius: 8px;
+      margin-top: 20%;
+    }
+  }
+}

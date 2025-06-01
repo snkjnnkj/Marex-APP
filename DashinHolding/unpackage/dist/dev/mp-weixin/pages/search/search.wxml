@@ -1,0 +1,1 @@
+<view class="container"><button bindtap="{{a}}">选择图片（最多9张）</button><view style="display:flex;flex-wrap:wrap"><view wx:for="{{b}}" wx:for-item="item" wx:key="d" class="thumbs"><image src="{{item.a}}" mode="heightFix" class="thumb" bindtap="{{item.b}}"/><button catchtap="{{item.c}}" class="del-btn">删除</button></view></view></view>

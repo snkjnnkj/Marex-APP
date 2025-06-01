@@ -1,0 +1,15 @@
+{
+  "hash": "3ecc9795",
+  "configHash": "5fb5ecc2",
+  "lockfileHash": "93fb7ff5",
+  "browserHash": "84b100b6",
+  "optimized": {
+    "@dcloudio/vue-cli-plugin-uni/packages/uni-app": {
+      "src": "../../../../../node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-app/dist/uni-app.es.js",
+      "file": "@dcloudio_vue-cli-plugin-uni_packages_uni-app.js",
+      "fileHash": "0743aded",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}

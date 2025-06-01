@@ -1,0 +1,1 @@
+{"version":3,"file":"ipconfig.js","sources":["stores/ipconfig.js"],"sourcesContent":["export const ip = 'http://localhost:3001'"],"names":[],"mappings":";AAAY,MAAC,KAAK;;"}

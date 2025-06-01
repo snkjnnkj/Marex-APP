@@ -1,0 +1,1 @@
+<view class="custom-navbar data-v-eaf4c2e5" style="{{'height:' + c}}"><view class="status-bar data-v-eaf4c2e5" style="{{'height:' + a}}"></view><view class="nav-content data-v-eaf4c2e5" style="{{'height:' + b}}"><slot></slot></view></view>

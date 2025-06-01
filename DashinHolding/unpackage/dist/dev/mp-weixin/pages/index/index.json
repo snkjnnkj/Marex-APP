@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "主页",
+  "usingComponents": {
+    "navbar": "../../components/navbar/navbar",
+    "placeholder": "../../components/placeholder/placeholder"
+  }
+}

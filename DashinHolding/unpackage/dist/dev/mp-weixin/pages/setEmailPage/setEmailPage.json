@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "修改邮箱地址",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "navbar": "../../components/navbar/navbar",
+    "placeholder": "../../components/placeholder/placeholder"
+  }
+}

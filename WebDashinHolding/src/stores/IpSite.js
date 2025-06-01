@@ -1,0 +1,1 @@
+export const IpSite = 'http://localhost:3005'

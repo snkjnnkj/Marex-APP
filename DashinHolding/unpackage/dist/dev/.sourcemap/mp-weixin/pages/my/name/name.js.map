@@ -1,0 +1,1 @@
+{"version":3,"file":"name.js","sources":["../../../../Downloads/HBuilderX.4.64.2025042916/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvbXkvbmFtZS9uYW1lLnZ1ZQ"],"sourcesContent":["import MiniProgramPage from 'C:/Users/marex/Documents/web/Marex-APP/DashinHolding/pages/my/name/name.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

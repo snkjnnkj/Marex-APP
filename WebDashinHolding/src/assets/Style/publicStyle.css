@@ -1,0 +1,56 @@
+
+.yk-space {
+    display: flex;
+    transition: all 0.2s ease-in-out;
+    gap: 32px;
+}
+
+.yk-space.dir-vertical {
+    flex-direction: column;
+}
+
+.yk-space.align-start {
+    align-items: flex-start;
+}
+
+.yk-space.justify-start {
+    justify-content: flex-start;
+}
+
+.yk-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    white-space: nowrap;
+    outline: none;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    color: var(--bgColor2);
+    background-color: var(--lcolor6);
+    border-color: transparent;
+    padding: 0 32px;
+    min-width: 48px;
+    height: 48px;
+    font-size: inherit;
+    border-radius: 12px;
+}
+
+.yk-button--outline {
+    color: var(--gray);
+    background-color: transparent;
+    border-color: var(--gray);
+}
+
+.yk-button--round {
+    border-radius: 800px;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 600;
+}
